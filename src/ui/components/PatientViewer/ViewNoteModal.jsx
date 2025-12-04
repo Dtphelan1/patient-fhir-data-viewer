@@ -34,7 +34,6 @@ const ViewNoteModal = ({ text }) => {
         <Box sx={style}>
           <Typography
             id="modal-modal-description"
-            component="pre"
             style={{
               textAlign: 'left',
               whiteSpace: 'pre-wrap', // preserve whitespace and line breaks, but allow wrapping
@@ -43,7 +42,7 @@ const ViewNoteModal = ({ text }) => {
               hyphens: 'auto',
             }}
           >
-            {text}
+            {text.trim()}
           </Typography>
         </Box>
       </Modal>

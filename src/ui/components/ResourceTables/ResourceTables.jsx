@@ -341,7 +341,7 @@ const renderNote = (text) => {
               hyphens: 'auto',
             }}
           >
-            {text}
+            {text.trim()}
           </div>
         </AccordionItemPanel>
       </AccordionItem>
